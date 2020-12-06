@@ -1,5 +1,5 @@
 const Discord = require('discord.js');
-const botsettings = require('./botsettings.json');
+//const botsettings = require('./botsettings.json');
 const bot= new Discord.Client({disableEveryone: true});
 var fs=require('fs');
 var userData= JSON.parse(fs.readFileSync('storage/userData.json'),'utf8');
@@ -57,4 +57,4 @@ bot.on("message", async message => {
 
 })
 
-bot.login(botsettings.token)
+bot.login(process.env.BOT_TOKEN)
