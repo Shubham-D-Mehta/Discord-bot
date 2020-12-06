@@ -2,7 +2,7 @@
   "name": "myro",
   "version": "1.0.0",
   "description": "This is a bot",
-  "main": "index.js",
+  "main": "bot.js",
   "scripts": {
 
     "start": "node bot.js"
