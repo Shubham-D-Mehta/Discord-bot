@@ -7,7 +7,6 @@ const botsettings = require('./botsettings.json');
 //   console.log(`${bot.user.username}! is up!!!!!!!!!!`);
 //   bot.user.setActivity("Why is sahil here");
 // });
-bot.login(botsettings.token)
 bot.on("message", async message => {
     if(message.author.bot || message.channel.type === "dm") return;
 
