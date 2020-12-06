@@ -8,7 +8,7 @@ var userData= JSON.parse(fs.readFileSync('storage/userData.json'),'utf8');
 //   console.log(`${bot.user.username}! is up!!!!!!!!!!`);
 //   bot.user.setActivity("Why is sahil here");
 // });
-bot.login(botsettings.token)
+client.login(process.env.BOT_TOKEN)
 bot.on("message", async message => {
     if(message.author.bot || message.channel.type === "dm") return;
 
